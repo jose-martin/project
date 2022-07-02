@@ -16,15 +16,33 @@
 </head>
 
 <body>
-  <header class="w-100 position-sticky top-0 d-flex justify-content-between align-items-center">
-    <a class="fs-3 fw-bold text-decoration-none ms-4" href="./index.html" class="left">NASA</a>
-    <div class="navbar d-flex me-4 gap-2">
-      <a class="fs-6 fw-bold text-decoration-none text-uppercase" href="./pages/kids.html">KIDS</a>
-      <a class="fs-6 fw-bold text-decoration-none text-uppercase" href="./pages/ladys.html">MUJER</a>
-      <a class="fs-6 fw-bold text-decoration-none text-uppercase" href="./pages/contact.html">CONTACTANOS</a>
-      <a class="fs-6 fw-bold text-decoration-none text-uppercase" href="./pages/mens.html">HOMBRE</a>
+  <nav class="navbar-dark navbar navbar-expand-md position-sticky top-0">
+    <div class="container-fluid">
+      <a class="navbar-brand fs-3 fw-bold text-decoration-none " href="./index.html">NASA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link fs-6 fw-bold text-decoration-none text-uppercase" href="./pages/kids.html">KIDS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs- fw-bold text-decoration-none text-uppercase" href="./pages/ladys.html">MUJER</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-6 fw-bold text-decoration-none text-uppercase"
+              href="./pages/contact.html">CONTACTANOS</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link fs-6 fw-bold text-decoration-none text-uppercase" href="./pages/mens.html">HOMBRE</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </header>
+  </nav>
+
   <main>
     <section class="banner">
       <img class="banner-index w-100" src="./assest/banner_index.jpg" alt="banner_index" class="banner-index" />
