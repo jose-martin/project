@@ -29,8 +29,8 @@ header a {
 
 header .left {
   color: black;
-  font-size: 3rem;
-  line-height: 3rem;
+  font-size: 2rem;
+  line-height: 2rem;
   font-weight: 600;
   margin-left: 1rem;
 }
@@ -140,15 +140,18 @@ footer {
   padding: 1rem 1rem;
   justify-content: space-between;
 }
+
 footer .direction {
   display: flex;
   flex-direction: column;
   margin-top: 1rem;
   gap: 1rem;
 }
+
 footer .direction .title {
   display: block;
 }
+
 footer .contact {
   display: flex;
   flex-direction: column;
@@ -172,14 +175,17 @@ footer .social a {
   width: 30px;
   height: 30px;
 }
+
 footer .social a img {
   width: 30px;
   height: 30px;
 }
+
 @media (max-width: 799px) {
   header {
     height: 50px;
   }
+
   header a {
     font-size: 0.75rem;
   }
@@ -191,6 +197,7 @@ footer .social a img {
   .banner {
     height: 200px;
   }
+
   .banner .banner-index {
     height: 200px;
   }
@@ -226,6 +233,7 @@ footer .social a img {
   .footer {
     gap: 0.5rem;
   }
+
   .footer .social {
     flex-direction: column;
   }
