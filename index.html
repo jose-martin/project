@@ -11,27 +11,29 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap" rel="stylesheet" />
   <title>NasaJeans</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 
 <body>
-  <header>
-    <a href="./index.html" class="left">NASA</a>
-    <div class="right">
-      <a href="./pages/kids.html">KIDS</a>
-      <a href="./pages/ladys.html">MUJER</a>
-      <a href="./pages/contact.html">CONTACTANOS</a>
-      <a href="./pages/mens.html">HOMBRE</a>
+  <header class="w-100 position-sticky top-0 d-flex justify-content-between align-items-center">
+    <a class="fs-3 fw-bold text-decoration-none ms-4" href="./index.html" class="left">NASA</a>
+    <div class="navbar d-flex me-4 gap-2">
+      <a class="fs-6 fw-bold text-decoration-none text-uppercase" href="./pages/kids.html">KIDS</a>
+      <a class="fs-6 fw-bold text-decoration-none text-uppercase" href="./pages/ladys.html">MUJER</a>
+      <a class="fs-6 fw-bold text-decoration-none text-uppercase" href="./pages/contact.html">CONTACTANOS</a>
+      <a class="fs-6 fw-bold text-decoration-none text-uppercase" href="./pages/mens.html">HOMBRE</a>
     </div>
   </header>
   <main>
     <section class="banner">
-      <img src="./assest/banner_index.jpg" alt="banner_index" class="banner-index" />
+      <img class="banner-index w-100" src="./assest/banner_index.jpg" alt="banner_index" class="banner-index" />
     </section>
-    <section class="factory">
-      <h2>Taller</h2>
-      <div class="row">
+    <section class="factory py-0 px-4 border-top border-bottom border-dark m-0">
+      <h2 class="fs-3 fw-bold m-0 mt-4">Taller</h2>
+      <div class="text-taller d-flex flex-row mb-4 gap-2 align-items-center">
         <img src="./assest/taller-index.jpg" alt="taller-index" />
-        <p>
+        <p class="m-0 text-justify">
           Lo que empezó hace 29 años siendo un ambicioso proyecto familiar,
           hoy constituye una de las empresas de manufactura textil peruana que
           ocupa los primeros lugares del ranking exportador. Actualmente
@@ -51,49 +53,49 @@
         </p>
       </div>
     </section>
-    <section class="colection">
-      <h2>Coleccion</h2>
+    <section class="colection border-bottom border-top border-dark">
+      <h2 class="fs-3 fw-bold m-0 ms-4 mt-4">Coleccion</h2>
       <div class="row">
-        <div class="column">
-          <a href="./pages/ladys.html">
+        <div class="col position-relative">
+          <a class="m-auto top-0 start-0 end-0 bottom-0 position-absolute" href="./pages/ladys.html">
             <img src="./assest/mujer-index.jpg" alt="mujer-index" />
           </a>
         </div>
-        <div class="column">
-          <a href="./pages/mens.html">
+        <div class="col position-relative">
+          <a class="m-auto top-0 start-0 end-0 bottom-0 position-absolute" href="./pages/mens.html">
             <img src="./assest/hombre-index.jpg" alt="hombre-index" />
           </a>
         </div>
-        <div class="column">
-          <a href="./pages/kids.html">
+        <div class="col position-relative">
+          <a class="m-auto top-0 start-0 end-0 bottom-0 position-absolute" href="./pages/kids.html">
             <img src="./assest/kids-index.jpg" alt="kids-index" />
           </a>
         </div>
       </div>
     </section>
   </main>
-  <footer class="footer">
-    <div class="direction">
+  <footer class="footer d-flex p-4 justify-content-between">
+    <div class="d-flex flex-column mt-4 gap-4">
       <div>
-        <span class="title">Contacto:</span>
+        <span class="d-block fw-semibold">Contacto:</span>
         <span>+51 933424848</span>
       </div>
       <div>
-        <span class="title">Direccion:</span>
+        <span class="d-block fw-semibold">Direccion:</span>
         <span>Jr Gamarra 152 La Victoria</span>
       </div>
       <div>
-        <span class="title">Horario:</span>
+        <span class="d-block fw-semibold">Horario:</span>
         <span>8am a 7pm</span>
       </div>
     </div>
-    <div class="contact">
-      <a href="./pages/contact.html">Contactanos</a>
-      <a href="./pages/ladys.html">Mujer</a>
-      <a href="./pages/mens.html">Hombre</a>
-      <a href="./pages/kids.html">kids</a>
+    <div class="contact d-flex flex-column gap-4 mt-4">
+      <a class="text-decoration-none color-dark fw-semibold" href="./pages/contact.html">Contactanos</a>
+      <a class="text-decoration-none color-dark fw-semibold" href="./pages/ladys.html">Mujer</a>
+      <a class="text-decoration-none color-dark fw-semibold" href="./pages/mens.html">Hombre</a>
+      <a class="text-decoration-none color-dark fw-semibold" href="./pages/kids.html">kids</a>
     </div>
-    <div class="social">
+    <div class="social d-flex mt-4 gap-4">
       <!-- <div class="column"> -->
       <a href="https://www.facebook.com/nasajeans/" class="item">
         <img src="./assest/logo-face.jpg" alt="logo-face" />
@@ -111,6 +113,11 @@
       <!-- </div> -->
     </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+
 </body>
 
 </html>
