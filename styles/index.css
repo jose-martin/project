@@ -95,9 +95,6 @@ footer .social a img {
 }
 
 @media (max-width: 799px) {
-  header {
-    height: 50px;
-  }
 
   header a {
     font-size: 0.75rem;

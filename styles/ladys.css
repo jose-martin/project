@@ -4,108 +4,55 @@ body {
 
 header {
     width: 100%;
-    background-color: orange;
+    background-color: #3B3355;
     z-index: 10;
     position: sticky;
 }
 
-
-
-
-
-
-.banner-mujer {
-    width: 100%;
-    height: 270px;
-    
-    position: relative;
-}
-
-.banner-mujer .banner-one {
-    width: 100%;
-    height: 250px;
-    
-
-}
-
-.banner-mujer .banner-two {
-    position: absolute;
-    height: 120px;
-    width: 250px;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    transform: rotateZ(315deg);
-}
-
-.imagen-header {
-    width: 100%;
-    height: 100px;
-
-}
-
-.imagen-header img {
-    width: 30%;
-    height: 70px;
-    margin-left: 25rem;
-    top: 0;
-}
-
-.fondo-mujer {
-    background-color: #e4fff9;
-    width: 100%;
-    height: 700px;
-    display: grid;
-    grid-template-columns: repeat(3, 2fr);
-    padding: 1.5rem 2rem;
+.carousel-inner .carousel-item {
+    height: 300px;
 }
 
 
 .modda-mujer {
-    font-size: 2.5rem;
     font-weight: 600;
-    margin-left: 1rem;
-    margin-top: 0;
-    top: 0;
-    width: 100%;
-    height: 50px;
-    color: whitesmoke;
+    line-height: 5rem;
+    padding-left: 1rem;
     margin: 0;
+    color: white;
     background-color: black;
 }
+
+
+.fondo-mujer {
+    background-color: #e4fff9;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1.5rem 2rem;
+    gap: 2rem;
+}
+
 
 
 
 .mujer1 {
     width: 200px;
     height: 280px;
-    margin-left: 2rem;
-    padding: 0 0.5rem;
     color: black;
-    border: 3px solid black;
-
-
+    border: 8px solid black;
+    place-self: center;
+    position: relative;
 }
 
 .img-mujer1 {
-    background-color: whitesmoke;
-    margin-top: 10px;
-
-}
-
-.img-mujer1 img {
     width: 100%;
     height: 220px;
 }
 
 .container-description {
     display: flex;
-
-    font-size: 0.5;
-    border: 1px solid black;
-
+    height: 44px;
 }
 
 .descrption-articul {
@@ -114,18 +61,29 @@ header {
     /* height: 70px; */
     color: aliceblue;
     font-weight: 400;
-    height: 40px;
+    height: 44px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .descrption-articul p {
-    margin-top: 0%;
+    width: 100%;
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1rem;
+    text-align: center;
 }
 
 .descuento {
+    position: absolute;
     background-color: silver;
     color: black;
     font-weight: 600;
-    height: 40px;
+    height: 24px;
+    top: 0;
+    right: 0;
 
 }
 
@@ -157,23 +115,51 @@ header {
 
 }
 
-.sociales {
-    display: flex;
-    justify-content: end;
-    gap: 30px;
-    margin-top: 0;
-    margin-bottom: 0;
-    height: 40px;
-    margin-right: 5px;
+footer {
+    background-color: #BFCDE0;
 }
 
-.sociales a {
-    width: 40px;
+
+
+footer .social a {
+    width: 30px;
     height: 30px;
 }
 
-.sociales a img {
-    width: 40px;
-    height: 40px;
-    margin-bottom: 0;
+footer .social a img {
+    width: 30px;
+    height: 30px;
+}
+
+@media (max-width: 799px) {
+    header a {
+        font-size: 0.75rem;
+    }
+
+    header .left {
+        font-size: 1.5rem;
+    }
+
+
+    .carousel-inner .carousel-item {
+        height: 170px;
+    }
+
+    .carousel-inner .carousel-item img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .fondo-mujer {
+        grid-template-columns: 1fr;
+    }
+
+    .footer {
+        gap: 0.5rem;
+    }
+
+    .footer .social {
+        flex-direction: column;
+    }
 }
