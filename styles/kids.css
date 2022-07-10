@@ -1,0 +1,20 @@
+header {
+    width: 100%;
+    background-color: #3B3355;
+    z-index: 10;
+    position: sticky;
+}
+
+.carousel-inner {
+    height: 500px;
+}
+
+.carousel-inner .corousel-item {
+    height: 500px;
+}
+
+.intro {
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+}
