@@ -2,10 +2,13 @@
   font-family: "Poppins";
 }
 
+header {
+  z-index: 10;
+
+}
 
 .navbar {
   background-color: #3B3355;
-  z-index: 10;
 }
 
 .navbar a {

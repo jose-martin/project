@@ -3,14 +3,20 @@ header {
     background-color: #3B3355;
     z-index: 10;
     position: sticky;
+    top: 0;
 }
 
 .carousel-inner {
     height: 500px;
 }
 
-.carousel-inner .corousel-item {
+.carousel-inner .carousel-item {
     height: 500px;
+}
+
+.carousel-inner .carousel-item img {
+    height: 500px;
+    object-fit: cover;
 }
 
 .intro {
