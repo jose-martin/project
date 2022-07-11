@@ -40,25 +40,65 @@ header {
     row-gap: 3rem;
     column-gap: 1rem;
     padding: 3rem 0;
+
 }
 
 .grid-col {
     place-self: center;
+
 }
 
 .hombre1 {
     justify-items: center;
-    width: 150px;
+    width: 200px;
+    height: 250px;
+    position: relative;
+
 }
 
-.hombre1 img {
+.hombre1 .des-hombre {
+    color: #3B3355;
+    position: absolute;
+    bottom: -10px;
+}
+
+.img-hombre1-comun {
+    width: 150px;
+    height: 220px;
+    /* align-items: center; */
+    /* border-width: 8px;
+    border-radius: 20%; */
+    /* border-style: solid; */
+    z-index: 0;
+    position: absolute;
+    top: 0;
+}
+
+/* .hombre1 {
     width: 150px;
     height: 200px;
-    align-items: center;
-    border-width: 8px;
-    border-radius: 20%;
-    border-style: solid;
+    color: black;
+    border: 8px solid black;
+    place-self: center;
+    position: relative;
+} */
 
+/* .img-hombre1-comun {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 220px;
+    top: 0;
+    left: 0;
+} */
+
+.img-hombre1 {
+    transition: 0.2s all ease-in-out;
+}
+
+.img-hombre1:hover {
+    opacity: 0;
+    cursor: pointer;
 }
 
 .hombre1 p {
