@@ -134,6 +134,23 @@ footer {
     background-color: #BFCDE0;
 }
 
+.aviso {
+    transition: 1s;
+
+}
+
+.aviso:hover {
+    transform: scale(1.5);
+}
+
+.contact {
+    transition: 1.5s;
+
+}
+
+.contact a:hover {
+    transform: scale(3);
+}
 
 
 footer .social a {
@@ -144,6 +161,17 @@ footer .social a {
 footer .social a img {
     width: 30px;
     height: 30px;
+}
+
+.social {
+    transition: 0.5s;
+
+}
+
+.social img:hover {
+    transform: scale(1.5);
+    
+
 }
 
 @media (max-width: 799px) {
