@@ -138,12 +138,12 @@ footer {
     color: aqua;
 }
 
-.f-red {
+.f-red1 {
     transition: 0.5s;
 
 }
 
-.f-red img:hover {
+.f-red1 img:hover {
     transform: scale(1.5);
 
 
