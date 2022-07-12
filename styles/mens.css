@@ -118,6 +118,38 @@ footer {
     background-color: #BFCDE0;
 }
 
+.modulo {
+    transition: 1s;
+
+}
+
+.modulo:hover {
+    transform: scale(1.5);
+    color: blue;
+}
+
+.paginas {
+    transition: 1.5s;
+
+}
+
+.paginas a:hover {
+    transform: scale(3);
+    color: aqua;
+}
+
+.f-red {
+    transition: 0.5s;
+
+}
+
+.f-red img:hover {
+    transform: scale(1.5);
+
+
+}
+
+
 footer .social a {
     width: 30px;
     height: 30px;
