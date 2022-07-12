@@ -19,6 +19,7 @@ header {
     padding: 0;
     width: 100%;
     margin: 0;
+
 }
 
 
@@ -38,7 +39,7 @@ header {
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
     row-gap: 3rem;
-    column-gap: 1rem;
+    column-gap: 3rem;
     padding: 3rem 0;
 
 }
@@ -59,12 +60,13 @@ header {
 .hombre1 .des-hombre {
     color: #3B3355;
     position: absolute;
-    bottom: -10px;
+    bottom: 0;
+    padding: 10px 0;
 }
 
 .img-hombre1-comun {
     width: 150px;
-    height: 220px;
+    height: 200px;
     /* align-items: center; */
     /* border-width: 8px;
     border-radius: 20%; */
@@ -112,6 +114,7 @@ header {
 }
 
 footer {
+
     background-color: #BFCDE0;
 }
 
