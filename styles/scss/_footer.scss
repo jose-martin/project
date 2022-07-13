@@ -1,0 +1,23 @@
+@import "variables.scss";
+
+footer {
+  background-color: #bfcde0;
+  .social {
+    a {
+      width: 30px;
+      height: 30px;
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}
+@media (max-width: $mobile) {
+  footer {
+    gap: 0.5rem;
+    .social {
+      flex-direction: column;
+    }
+  }
+}

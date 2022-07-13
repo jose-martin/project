@@ -1,0 +1,22 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "## Proyecto de página web",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass --include-path sass ./styles/scss/index.scss ./styles/index.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jose-martin/project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jose-martin/project/issues"
+  },
+  "homepage": "https://github.com/jose-martin/project#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
