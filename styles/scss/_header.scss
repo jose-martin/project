@@ -1,20 +1,24 @@
 @import "variables.scss";
+@import "helper.scss";
 
 header {
   z-index: 10;
+
   .navbar {
     background-color: $purple;
+
     a {
       color: $white;
     }
   }
 }
 
-@media (max-width: $mobile) {
+@include isMobile {
   header {
     a {
       font-size: 0.75rem;
     }
+
     .left {
       font-size: 1.5rem;
     }

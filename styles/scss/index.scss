@@ -1,104 +1,10 @@
 @import "variables.scss";
 @import "header.scss";
 @import "footer.scss";
+@import "home.scss";
+@import "mens.scss";
+
 
 * {
   font-family: "Poppins";
-}
-
-main {
-  .banner {
-    height: 400px;
-    .banner-index {
-      height: 400px;
-    }
-  }
-
-  .factory {
-    background-color: $white;
-    h2 {
-      color: $purple;
-    }
-    .text-taller {
-      img {
-        width: 18rem;
-        height: 300px;
-        object-fit: cover;
-      }
-      p {
-        text-align: justify;
-      }
-    }
-  }
-
-  .colection {
-    background-color: $white;
-    padding-bottom: 1.5rem;
-    h2 {
-      color: $purple;
-    }
-    .row {
-      width: 100%;
-      margin-top: 1rem;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      .col {
-        height: 400px;
-        transition: all 0.2s ease-in-out;
-
-        &:hover {
-          transform: scale(1.05);
-        }
-
-        a {
-          width: 250px;
-          height: 400px;
-          img {
-            width: 250px;
-            height: 400px;
-            object-fit: cover;
-            border-radius: 15%;
-            top: 0;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: $mobile) {
-  .banner {
-    height: 200px;
-    .banner-index {
-      height: 200px;
-    }
-  }
-
-  .factory {
-    h2 {
-      text-align: center;
-    }
-    .text-taller {
-      flex-direction: column !important;
-      align-items: center !important;
-    }
-  }
-
-  .colection {
-    .row {
-      grid-template-columns: 1fr;
-      gap: 1rem;
-      .column {
-        height: 200px;
-        a {
-          width: 125px;
-          height: 200px;
-        }
-        img {
-          width: 125px;
-          height: 200px;
-        }
-      }
-    }
-  }
 }

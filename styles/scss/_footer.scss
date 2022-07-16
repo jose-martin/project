@@ -1,21 +1,59 @@
 @import "variables.scss";
+@import "helper.scss";
 
 footer {
   background-color: $gray;
+
   .social {
     a {
       width: 30px;
       height: 30px;
+
       img {
         width: 30px;
         height: 30px;
       }
     }
   }
+
+
+  .f-red1 {
+    img {
+
+      transition: 0.5s;
+
+      &:hover {
+        transform: scale(1.5);
+      }
+    }
+
+  }
+
+
+  .modulo {
+    transition: 0.3s;
+
+    &:hover {
+      transform: scale(1.2);
+      color: blue;
+    }
+  }
+
+  .paginas {
+    a {
+      transition: 0.5s;
+
+      &:hover {
+        transform: scale(1.5);
+      }
+    }
+  }
 }
-@media (max-width: $mobile) {
+
+@include isMobile {
   footer {
     gap: 0.5rem;
+
     .social {
       flex-direction: column;
     }

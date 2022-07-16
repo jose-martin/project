@@ -19,6 +19,19 @@ footer {
     footer .social a img {
       width: 30px;
       height: 30px; }
+  footer .f-red1 img {
+    transition: 0.5s; }
+    footer .f-red1 img:hover {
+      transform: scale(1.5); }
+  footer .modulo {
+    transition: 0.3s; }
+    footer .modulo:hover {
+      transform: scale(1.2);
+      color: blue; }
+  footer .paginas a {
+    transition: 0.5s; }
+    footer .paginas a:hover {
+      transform: scale(1.5); }
 
 @media (max-width: 799px) {
   footer {
@@ -26,44 +39,41 @@ footer {
     footer .social {
       flex-direction: column; } }
 
-* {
-  font-family: "Poppins"; }
-
-main .banner {
+.home .banner {
   height: 400px; }
-  main .banner .banner-index {
+  .home .banner .banner-index {
     height: 400px; }
 
-main .factory {
+.home .factory {
   background-color: #fefcfd; }
-  main .factory h2 {
+  .home .factory h2 {
     color: #3b3355; }
-  main .factory .text-taller img {
+  .home .factory .text-taller img {
     width: 18rem;
     height: 300px;
     object-fit: cover; }
-  main .factory .text-taller p {
+  .home .factory .text-taller p {
     text-align: justify; }
 
-main .colection {
+.home .colection {
   background-color: #fefcfd;
   padding-bottom: 1.5rem; }
-  main .colection h2 {
+  .home .colection h2 {
     color: #3b3355; }
-  main .colection .row {
+  .home .colection .row {
     width: 100%;
     margin-top: 1rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr); }
-    main .colection .row .col {
+    .home .colection .row .col {
       height: 400px;
       transition: all 0.2s ease-in-out; }
-      main .colection .row .col:hover {
+      .home .colection .row .col:hover {
         transform: scale(1.05); }
-      main .colection .row .col a {
+      .home .colection .row .col a {
         width: 250px;
         height: 400px; }
-        main .colection .row .col a img {
+        .home .colection .row .col a img {
           width: 250px;
           height: 400px;
           object-fit: cover;
@@ -71,23 +81,91 @@ main .colection {
           top: 0; }
 
 @media (max-width: 799px) {
-  .banner {
+  .home .banner {
     height: 200px; }
-    .banner .banner-index {
+    .home .banner .banner-index {
       height: 200px; }
-  .factory h2 {
+  .home .factory h2 {
     text-align: center; }
-  .factory .text-taller {
+  .home .factory .text-taller {
     flex-direction: column !important;
     align-items: center !important; }
-  .colection .row {
+  .home .colection .row {
     grid-template-columns: 1fr;
     gap: 1rem; }
-    .colection .row .column {
+    .home .colection .row .column {
       height: 200px; }
-      .colection .row .column a {
+      .home .colection .row .column a {
         width: 125px;
         height: 200px; }
-      .colection .row .column img {
+      .home .colection .row .column img {
         width: 125px;
         height: 200px; } }
+
+.mens .carousel-inner .carousel-item {
+  height: 300px; }
+
+.mens .container-colection {
+  padding: 0;
+  width: 100%;
+  margin: 0; }
+  .mens .container-colection .titulo-coleccion {
+    width: 100%;
+    color: white;
+    background-color: black;
+    font-size: 2.5rem;
+    padding-left: 2rem;
+    line-height: 4rem;
+    font-weight: 800; }
+  .mens .container-colection .grid-hombre {
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    row-gap: 3rem;
+    column-gap: 3rem;
+    padding: 3rem 0; }
+    .mens .container-colection .grid-hombre .grid-col {
+      place-self: center; }
+      .mens .container-colection .grid-hombre .grid-col .hombre1 {
+        justify-items: center;
+        width: 150px;
+        height: 250px;
+        position: relative; }
+        .mens .container-colection .grid-hombre .grid-col .hombre1 .img-hombre1-comun, .mens .container-colection .grid-hombre .grid-col .hombre1 .img-hombre2, .mens .container-colection .grid-hombre .grid-col .hombre1 .img-hombre1 {
+          width: 150px;
+          height: 200px;
+          z-index: 0;
+          position: absolute;
+          top: 0; }
+        .mens .container-colection .grid-hombre .grid-col .hombre1 .img-hombre1 {
+          transition: 0.2s all ease-in-out; }
+          .mens .container-colection .grid-hombre .grid-col .hombre1 .img-hombre1:hover {
+            opacity: 0;
+            cursor: pointer; }
+        .mens .container-colection .grid-hombre .grid-col .hombre1 .des-hombre {
+          text-align: center;
+          color: black;
+          position: absolute;
+          bottom: 0;
+          height: 40px;
+          padding: 10px 0;
+          margin: 0;
+          font-size: 20px;
+          font-weight: 600; }
+
+@media (max-width: 799px) {
+  .mens .carousel-inner .carousel-item {
+    height: 170px; }
+    .mens .carousel-inner .carousel-item img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
+  .mens .titulo-coleccion {
+    text-align: center;
+    padding-left: 0; }
+  .mens .grid-hombre {
+    grid-template-columns: 1fr; } }
+
+* {
+  font-family: "Poppins"; }
