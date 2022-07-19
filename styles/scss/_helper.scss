@@ -1,5 +1,3 @@
-@import "variables.scss";
-
 @mixin isMobile {
     @media (max-width: $mobile) {
         @content

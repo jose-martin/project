@@ -19,6 +19,7 @@
         }
     }
 
+
     .titulo {
         font-size: 3rem;
         font-weight: bold;
@@ -32,13 +33,12 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         padding: 4rem 2rem;
-        row-gap: 3rem;
         gap: 2rem;
 
         .kids1 {
             width: 250px;
             height: 300px;
-            color: black;
+            color: map-get($colors, "black");
             place-self: center;
             position: relative;
 
@@ -72,7 +72,7 @@
 
                 &-articulo {
                     position: relative;
-                    background-color: black;
+                    background-color: map-get($colors, "black");
                     color: aliceblue;
                     font-weight: 400;
                     height: 44px;
@@ -108,6 +108,32 @@
             }
         }
 
+    }
+
+    @include isMobile {
+        .carousel-inner {
+            height: 200px;
+
+            .carousel-item {
+                height: 2000px;
+
+                img {
+                    height: 200px;
+                    object-fit: cover;
+                }
+
+                .intro {
+                    color: black;
+                    font-size: 2rem;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .fondo-kids {
+            grid-template-columns: 1fr;
+            gap: 4rem;
+        }
     }
 
 }

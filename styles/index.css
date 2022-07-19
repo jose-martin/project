@@ -191,7 +191,6 @@ footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 4rem 2rem;
-  row-gap: 3rem;
   gap: 2rem; }
   .kids .fondo-kids .kids1 {
     width: 250px;
@@ -246,6 +245,22 @@ footer {
       z-index: 2; }
       .kids .fondo-kids .kids1 .descuento p {
         margin-top: 0%; }
+
+@media (max-width: 799px) {
+  .kids .carousel-inner {
+    height: 200px; }
+    .kids .carousel-inner .carousel-item {
+      height: 2000px; }
+      .kids .carousel-inner .carousel-item img {
+        height: 200px;
+        object-fit: cover; }
+      .kids .carousel-inner .carousel-item .intro {
+        color: black;
+        font-size: 2rem;
+        font-weight: bold; }
+  .kids .fondo-kids {
+    grid-template-columns: 1fr;
+    gap: 4rem; } }
 
 * {
   font-family: "Poppins"; }

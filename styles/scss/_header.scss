@@ -1,14 +1,11 @@
-@import "variables.scss";
-@import "helper.scss";
-
 header {
   z-index: 10;
 
   .navbar {
-    background-color: $purple;
+    background-color: map-get($colors, "purple");
 
     a {
-      color: $white;
+      color: map-get($colors, "white");
     }
   }
 }

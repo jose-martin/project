@@ -1,8 +1,6 @@
-@import "variables.scss";
-@import "helper.scss";
-
 footer {
-  background-color: $gray;
+  background-color: map-get($colors, "gray");
+  ;
 
   .social {
     a {
