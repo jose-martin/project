@@ -46,7 +46,7 @@ footer {
 
 .home .factory {
   background-color: #fefcfd; }
-  .home .factory h2 {
+  .home .factory h1 {
     color: #3b3355; }
   .home .factory .text-taller img {
     width: 18rem;
@@ -112,7 +112,6 @@ footer {
   .mens .container-colection .titulo-coleccion {
     width: 100%;
     color: #fefcfd;
-    background-color: black;
     font-size: 2.5rem;
     padding-left: 2rem;
     line-height: 4rem;
