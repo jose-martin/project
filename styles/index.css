@@ -182,7 +182,7 @@ footer {
   font-size: 3rem;
   font-weight: bold;
   padding: 20px 10px;
-  background-color: white; }
+  background-color: #fefcfd; }
 
 .kids .fondo-kids {
   background-color: #e4fff9;
@@ -249,7 +249,7 @@ footer {
   .kids .carousel-inner {
     height: 200px; }
     .kids .carousel-inner .carousel-item {
-      height: 2000px; }
+      height: 200px; }
       .kids .carousel-inner .carousel-item img {
         height: 200px;
         object-fit: cover; }
@@ -260,6 +260,134 @@ footer {
   .kids .fondo-kids {
     grid-template-columns: 1fr;
     gap: 4rem; } }
+
+body {
+  margin: 0; }
+
+.ladys .carousel-inner {
+  height: 300px; }
+  .ladys .carousel-inner .carousel-item {
+    height: 300px; }
+
+.ladys .modda-mujer {
+  font-weight: 600;
+  line-height: 5rem;
+  padding-left: 1rem;
+  margin: 0;
+  color: #fefcfd;
+  background-color: black; }
+
+.ladys .fondo-mujer {
+  background-color: #e4fff9;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 1.5rem 2rem;
+  gap: 3rem; }
+  .ladys .fondo-mujer .mujer1 {
+    width: 200px;
+    height: 280px;
+    color: black;
+    border: 8px solid black;
+    place-self: center;
+    position: relative; }
+    .ladys .fondo-mujer .mujer1 .img-mujer1-common {
+      z-index: 1;
+      position: absolute;
+      width: 100%;
+      height: 220px;
+      top: 0;
+      left: 0; }
+    .ladys .fondo-mujer .mujer1 .img-mujer1 {
+      transition: 0.2s all ease-in-out; }
+      .ladys .fondo-mujer .mujer1 .img-mujer1-mujer1:hover {
+        opacity: 0;
+        cursor: pointer; }
+    .ladys .fondo-mujer .mujer1 .container-description {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      z-index: 2;
+      display: flex;
+      height: 44px; }
+      .ladys .fondo-mujer .mujer1 .container-description .descrption-articul {
+        position: relative;
+        background-color: blue;
+        color: #fefcfd;
+        font-weight: 400;
+        height: 44px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .ladys .fondo-mujer .mujer1 .container-description .descrption-articul p {
+          width: 100%;
+          margin: 0;
+          font-size: 1rem;
+          line-height: 1rem;
+          text-align: center; }
+    .ladys .fondo-mujer .mujer1 .descuento {
+      position: absolute;
+      background-color: silver;
+      color: black;
+      font-weight: 600;
+      height: 24px;
+      top: 0;
+      right: 0;
+      z-index: 2; }
+      .ladys .fondo-mujer .mujer1 .descuento p {
+        margin-top: 0%; }
+
+@media (max-width: 799px) {
+  .ladys .carousel-inner {
+    height: 200px; }
+    .ladys .carousel-inner .carousel-item {
+      height: 200px; }
+  .ladys .fondo-mujer {
+    grid-template-columns: 1fr;
+    gap: 4rem; } }
+
+body {
+  margin: 0; }
+
+.contact .banner-contact {
+  width: 100%;
+  height: 300px;
+  background-image: url(../assest/banner_contacto.jpg);
+  border: solid 2.0px red;
+  margin: 0;
+  right: 0; }
+
+.contact .container-contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0;
+  background-color: lightcyan;
+  border-bottom: 50px solid black;
+  height: 500px; }
+  .contact .container-contact .form-text {
+    margin: 0;
+    padding: 0 1.5px;
+    font-size: 1.8rem; }
+    .contact .container-contact .form-text p {
+      margin: 0;
+      margin-top: 4rem;
+      margin-left: 3rem;
+      font-weight: 600; }
+  .contact .container-contact .container-form {
+    margin-top: -180px;
+    padding: 2rem 5rem;
+    background-color: white;
+    margin-right: 5rem p;
+      margin-right-color: black;
+      margin-right-font-size: 1.5rem; }
+    .contact .container-contact .container-form .submit {
+      color: wheat;
+      background-color: red;
+      font-size: 24px;
+      border-radius: 5%;
+      width: 100px; }
 
 * {
   font-family: "Poppins"; }
