@@ -4,8 +4,8 @@
   "description": "## Proyecto de página web",
   "main": "index.js",
   "scripts": {
-    "build:dev": "node-sass --include-path sass ./styles/scss/index.scss ./styles/index.css -w",
-    "build": "node-sass --include-path sass ./styles/scss/index.scss ./styles/index.css"
+    "build:dev": "node-sass --include-path sass ./src/styles/scss/index.scss ./src/styles/index.css -w",
+    "build": "node-sass --include-path sass ./src/styles/scss/index.scss ./src/styles/index.css"
   },
   "repository": {
     "type": "git",
