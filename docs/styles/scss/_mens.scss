@@ -23,7 +23,7 @@
 
     .grid-hombre {
       background-color: map-get($colors, "white");
-      ;
+
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       width: 100%;
